@@ -72,7 +72,8 @@
                                     <wadl>${basedir}/src/main/resources/schemas/test/test.wadl</wadl>
                                     <bindingFiles>
                                         <bindingFile>${basedir}/src/main/resources/schemas/test/resource.xjb</bindingFile>
-                                        <!--<bindingFile>classpath:/schemas/w3c/w3c.episode</bindingFile>-->
+                                        <!-- leads to "Error compiling schema from WADL : "file:...." is not a part of this compilation. Is this a mistake for ..."
+                                        <bindingFile>classpath:/schemas/w3c/w3c.episode</bindingFile>-->
                                     </bindingFiles>
                                     <extraargs>
                                         <extraarg>-verbose</extraarg>

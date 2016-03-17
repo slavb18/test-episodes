@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns="http://wadl.dev.java.net/2009/02"
+    xmlns:res="urn:ru:ilb:meta:test:resource"
+>
+
+    <doc title="Test api">
+        Test api
+    </doc>
+    <grammars>
+        <include href="resource.xsd" />
+    </grammars>
+    <resources base="http://localhost:8080/test/web">
+        <resource path="resources" id="ru.ilb.test.api.ResourcesResource">
+            <method name="GET" id="list">
+                <response status="200">
+                    <representation mediaType="application/xml" element="res:resources"/>
+                </response>
+            </method>
+        </resource>
+    </resources>
+
+</application>

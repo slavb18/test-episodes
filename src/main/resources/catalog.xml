@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="public">
+
+    <system systemId="http://www.w3.org/1999/xlink.xsd" uri="classpath:/schemas/w3c/xlink.xsd"/>
+
+</catalog>

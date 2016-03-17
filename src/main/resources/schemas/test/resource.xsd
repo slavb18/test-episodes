@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="urn:ru:ilb:meta:test:resource"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns="urn:ru:ilb:meta:test:resource"
+    elementFormDefault="qualified">
+
+    <xsd:import namespace="http://www.w3.org/1999/xlink" schemaLocation="http://www.w3.org/1999/xlink.xsd"/>
+
+
+    <xsd:complexType name="ResourceType">
+        <xsd:attribute ref="xlink:type"/>
+        <xsd:attribute ref="xlink:href"/>
+        <xsd:attribute ref="xlink:role"/>
+        <xsd:attribute ref="xlink:title"/>
+    </xsd:complexType>
+    <xsd:element name="resource" type="ResourceType"/>
+    <xsd:element name="resources">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="resource" minOccurs="0" maxOccurs="unbounded"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+</xsd:schema>

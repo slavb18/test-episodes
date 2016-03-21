@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsd:schema
     xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-    targetNamespace="urn:ru:ilb:meta:test:resource"
+    targetNamespace="urn:ru:ilb:test:resource"
     xmlns:xlink="http://www.w3.org/1999/xlink"
-    xmlns="urn:ru:ilb:meta:test:resource"
+    xmlns="urn:ru:ilb:test:resource"
     elementFormDefault="qualified">
 
     <xsd:import namespace="http://www.w3.org/1999/xlink" schemaLocation="http://www.w3.org/1999/xlink.xsd"/>

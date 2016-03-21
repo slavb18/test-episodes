@@ -78,6 +78,7 @@
                                     <extraargs>
                                         <extraarg>-verbose</extraarg>
                                         <extraarg>-inheritResourceParams</extraarg>
+                                        <extraarg>-xjc-Xfluent-api</extraarg>
                                         <extraarg>-catalog</extraarg>
                                         <extraarg>${basedir}/src/main/resources/catalog.xml</extraarg>
                                         <!-- leads to java.lang.ClassCastException: org.apache.cxf.catalog.OASISCatalogManager$1 cannot be cast to com.sun.org.apache.xml.internal.resolver.tools.CatalogResolver
@@ -100,6 +101,13 @@
                         </goals>
                     </execution>
                 </executions>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.jvnet.jaxb2_commons</groupId>
+                        <artifactId>jaxb2-fluent-api</artifactId>
+                        <version>3.0</version>
+                    </dependency>
+                </dependencies>
             </plugin>
         </plugins>
     </build>
